@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*button*/
+.follow,
+.like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #FCF7FF;
+}
+
+button {
+    background-color: #b3a8ac;
+    /* Light brown / tan */
+    color: #4e342e;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(86, 86, 88, 0.3);
+}
+
+button:hover {
+    background-color: #c7babf;
+    box-shadow: 0 6px 20px rgba(113, 112, 120, 0.5);
+    transform: scale(1.05);
+}
+
+/**nav**/
+.flex b {
+    color: #655560;
+}
+
+.body {
+    background-color: #655560;
+}
+
+.nav {
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #C4CAD0;
+    height: 50px;
+}
+
+/**options of browse and home**/
+.ddlist {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 10px lightgray;
+}
+
+.ddlist a {
+    padding: 10px 20px;
+}
+
+/**options of nav**/
+.dropdown {
+    height: 28px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+}
+
+#search {
+    height: 100%;
+}
+
+/*options og nav*/
+.dropdown a:hover {
+    background-color: #878C8F;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .ddlist {
+    margin-top: 112px;
+    display: block;
+}
+
+/*options of browse and home*/
+.ddlist a:hover {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** section **/
+/** home **/
+/**book**/
+.book a img {
+    height: 260px;
+    width: 160px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.read {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 150px;
+}
+
+.min {
+    background-color: #2c2929;
+    height: 30rem;
+}
+
+.height {
+    height: 30rem;
+    width: 1000px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.para1 {
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.para2 {
+    font-size: 3rem;
+    color: #878C8F;
+    gap: 9px;
+}
+
+
+/**footer**/
+.company ul {
+    text-decoration: underline;
+}
+
+.company li {
+    color: white;
+}
+
+.company {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #878C8F;
+    padding: 20px;
+}
+
+.data {
+    list-style: none;
+}
+
+.data li:hover {
+    text-decoration: underline;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link i {
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+.linl i:hover {
+    background-color: white;
+}
+
+#art {
+    margin-top: 50px;
+}
+
+/*book discripation*/
+.book1 {
+    padding: 50px;
+    margin: 0px 50px 0 50px;
+    text-align: justify;
+}
+
+.book2 {
+    padding: 50px;
+    margin: 0px 50px 0 50px;
+    text-align: justify;
+}
+
+/*rating*/
+#simple-rating span {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+#simple-rating span.selected {
+    color: rgb(203, 186, 88);
+}
+
+.rating {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+}
+
+/*already rating*/
+.a_rating {
+    margin: 30px 50px 0 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#a_simple-rating .star {
+    font-size: 30px;
+    color: gray;
+    pointer-events: none;
+}
+
+#a_simple-rating .star.filled {
+    color: rgb(203, 186, 88);
+}
+
+
+/*ask the author*/
+.ask_a {
+    margin: 50px 0px 10px 200px;
+}
+
+.author {
+    font-size: 1rem;
+}
+
+.photo img {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.user {
+    height: 100px;
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.ask {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head {
+    font-size: 1.7rem;
+}
+
+.small {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.information {
+    height: 25vmin;
+    width: 85vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 50px 0px 10px 200px;
+}
+
+.ask_author {
+    margin-bottom: 200px;
+}
+
+/*genres*/
+.genres-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 40px;
+}
+
+.genre-card {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.genre-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*footer*/
+.company {
+    margin-top: 130px;
+}
+
+/*giveaways*/
+.give {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 80%;
+    margin: 50px 0px 50px 100px;
+    gap: 1rem;
+}
+
+.give-card {
+    background-color: #655560;
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    align-items: center;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.b img {
+    background-size: cover;
+    height: 200px;
+    width: 140px;
+}
+
+.give p {
+    margin: 20px 20px 0px 20px;
+}
+
+.give button {
+    margin-top: 20px;
+}
+
+/*my book*/
+.mybook,
+.newreleases,
+.recommend {
+    margin: 50px 30px 250px 30px;
+}
+
+/*quotes*/
+/*people*/
+.q_img img {
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.q_s p {
+    font-weight: bold;
+}
+
+.q_s {
+    display: flex;
+    gap: 5rem;
+    height: 100px;
+    width: 600px;
+}
+
+.quotes_section,
+.friends {
+    margin: 50px 200px 50px 200px;
+    width: 600px;
+}
+
+
+.text {
+    width: 350px;
+}
+
+.mybook,
+.recommend,
+.newreleases,
+.container {
+    margin-left: 150px;
+}
+
+.mybook p,
+.recommend p,
+.newreleases p {
+    color: #2c2929;
+}
+
+/*search_button*/
+.s {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 200px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.s:focus-within {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+#search {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    background: transparent;
+}
+
+#search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    padding: 8px;
+    transition: color 0.2s ease;
+}
