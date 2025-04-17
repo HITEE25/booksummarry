@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--creating navbar-->
+     <nav>
+        <div class="flex">
+        <p style="font-size: 1.5rem;">book<b>Glance</b></p>
+        <div class="dropdown" id="home">
+            <a>Home</a>
+        </div>
+        <div class="dropdown" id="mybook">
+            <a>My books</a>
+        </div>
+        <div class="dropdown">
+            <a>browse<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="ddlist">
+            <li><a id="genres">Genres</a></li>
+            <li><a id="recommend">Recommendations</a></li>
+            <li><a id="giveaway">Giveaways</a></li>
+            <li><a id="newr">New Releases</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <a>Home<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="ddlist">
+                <li><a id="quotes">Quotes</a></li>
+                <li><a id="askauthor">Ask the Author</a></li>
+                <li><a id="people">People</a></li>
+            </ul>
+        </div>
+        <div class="dropdown s"><input type="search" id="search" placeholder="Search books"></div>
+        <div class="dropdown"><a><i class="fa-solid fa-bell"></i></a></div>
+        <div class="dropdown"><a><i class="fa-solid fa-comments"></i></a></div>
+        <div class="dropdown"><a><i class="fa-solid fa-user-group"></i></a>
+        </div>
+
+    </div>
+    </nav>
+    <section>
+        <div class="ask_author">
+        <div class="ask_a">
+            <p class="head" style="margin-left: 100px;"><b>Ask Author</b></p>
+            <p class="small" style="margin-left: 100px;">FEATURED AUTHORS</p>
+            <div class="information">
+            <div class="author">
+                <div class="user">
+                    <div class="photo">
+                        <img style="background-image:url('author.png');">
+                    </div>
+                    <div class="name">
+                        <p><b>Madeline Miller</b></p>
+                        <p class="small">Author of Mixed-Up Lorem ipsum dolor sit</p>
+                        <div class="ask">
+                            <button>Ask</button>
+                            <div class="ans small">21 answer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="author">
+                <div class="user">
+                    <div class="photo">
+                        <img style="background-image:url('histry.png');">
+                    </div>
+                    <div class="name">
+                        <p><b>Madeline Miller</b></p>
+                        <p class="small">Author of Mixed-Up Lorem ipsum dolor</p>
+                        <div class="ask">
+                            <button>Ask</button>
+                            <div class="ans small">21 answer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="author">
+                <div class="user">
+                    <div class="photo">
+                        <img style="background-image:url('harry.png');">
+                    </div>
+                    <div class="name">
+                        <p><b>Christine Feehan</b></p>
+                        <p class="small">Author of Mixed-Up Lorem ipsum, dolor</p>
+                        <div class="ask">
+                            <button>Ask</button>
+                            <div class="ans small">21 answer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="author">
+                <div class="user">
+                    <div class="photo">
+                        <img style="background-image:url('junie.png');">
+                    </div>
+                    <div class="name">
+                        <p><b>Julia Alvarez</b></p>
+                        <p class="small">Author of Mixed-Up Lorem ipsum dolor</p>
+                        <div class="ask">
+                            <button>Ask</button>
+                            <div class="ans small">21 answer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="company">
+            <div class="data">
+                <ul>COMPANY</ul>
+    <br>
+    <li>About us</li>
+    <li>Careers</li>  
+    <li>Terms</li>
+    <li>Privacy</li>
+    <li>Interest Based Ads</li>
+    <li>Ad Preferences</li>
+    <li>Help</li>
+            </div>
+            <div class="data">
+                <ul>WORK WITH US</ul>
+    <br>
+    <li>Authors</li>
+    <li>Advertise</li>
+    <li>Authors & ads blog</li>
+            </div>
+            <div class="connect">
+                <ul>CONNECT</ul>
+                <div class="link">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</header>
+</body>
+<script src="book.js"></script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <style>
+    body {
+      background-color: #fdf9ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container1 {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #7c6e6e;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #5e4e4e;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <h2>Sign In</h2>
+    <form id="signInForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+  </div>
+  <script>const form = document.getElementById("signInForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+    
+      if (email === "" || password === "") {
+        alert("Please enter both fields");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long");
+        return false;
+      }
+      if (!email.endsWith('@gmail.com')) {
+        alert("Please enter a valid Gmail address");
+        return false;
+      }
+    
+      // Redirect or log success
+      alert("Login successful!");
+      window.location.href = "index.html";
+      return true;
+    });
+    </script>
+</body>
+</html>

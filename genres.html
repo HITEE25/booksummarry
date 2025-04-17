@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genres</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!--creating navbar-->
+     <nav>
+        <div class="flex">
+        <p style="font-size: 1.5rem;">book<b>Glance</b></p>
+        <div class="dropdown" id="home">
+            <a>Home</a>
+        </div>
+        <div class="dropdown" id="mybook">
+            <a>My books</a>
+        </div>
+        <div class="dropdown">
+            <a>browse<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="ddlist">
+            <li><a id="genres">Genres</a></li>
+            <li><a id="recommend">Recommendations</a></li>
+            <li><a id="giveaway">Giveaways</a></li>
+            <li><a id="newr">New Releases</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <a>Community<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="ddlist">
+                <li><a id="quotes">Quotes</a></li>
+                <li><a id="askauthor">Ask the Author</a></li>
+                <li><a id="people">People</a></li>
+            </ul>
+        </div>
+        <div class="dropdown s"><input type="search" id="search" placeholder="Search books"></div>
+        <div class="dropdown"><a><i class="fa-solid fa-bell"></i></a></div>
+        <div class="dropdown"><a><i class="fa-solid fa-comments"></i></a></div>
+        <div class="dropdown"><a><i class="fa-solid fa-user-group"></i></a>
+        </div>
+    </div>
+    </nav>
+</header>
+<div class="genres-container">
+    <div class="ger"><div class="genre-card" id="art1" style="background-image:url('Screenshot 2025-04-02 at 10.58.59 AM.png');"></div><p>ART</p></div>
+    <div class="ger"><div class="genre-card" id="biography" style="background-image:url('Screenshot 2025-04-02 at 10.58.37 AM.png');"></div><p>BIOGRAPHY</p></div>
+    <div class="ger"><div class="genre-card" id="romance" style="background-image:url('Screenshot 2025-04-02 at 12.21.35 PM.png');"></div><p>ROMANCE</p></div>
+    <div class="ger"><div class="genre-card" id="horror" style="background-image:url('Screenshot 2025-04-02 at 12.22.18 PM.png');"></div><p>HORROR</p></div>
+    <div class="ger"><div class="genre-card" id="fiction" style="background-image:url('junie.png');"></div><p>FICTION</p></div>
+    <div class="ger"><div class="genre-card" id="non_fiction" style="background-image:url('Screenshot 2025-04-02 at 12.15.25 PM.png');"></div><p>NON-FICTION</p></div>
+    <div class="ger"><div class="genre-card" id="religion" style="background-image:url('Screenshot 2025-04-11 at 9.02.22 PM.png');"></div><p>RELIGION</p></div>
+    <div class="ger"><div class="genre-card" id="science" style="background-image:url('Screenshot 2025-04-11 at 9.03.46 PM.png');"></div><p>SCIENCE</p></div>
+    <div class="ger"><div class="genre-card" id="sports" style="background-image:url('Screenshot 2025-04-11 at 9.04.35 PM.png');"></div><p>SPORTS</p></div>
+    <div class="ger"><div class="genre-card" id="mystry" style="background-image:url('Screenshot 2025-04-02 at 12.15.25 PM.png');"></div><p>MYSTERY</p></div>
+  </div>  
+    <footer>
+        <div class="company">
+            <div class="data">
+                <ul>COMPANY</ul>
+    <br>
+    <li>About us</li>
+    <li>Careers</li>  
+    <li>Terms</li>
+    <li>Privacy</li>
+    <li>Interest Based Ads</li>
+    <li>Ad Preferences</li>
+    <li>Help</li>
+            </div>
+            <div class="data">
+                <ul>WORK WITH US</ul>
+    <br>
+    <li>Authors</li>
+    <li>Advertise</li>
+    <li>Authors & ads blog</li>
+            </div>
+            <div class="connect">
+                <ul>CONNECT</ul>
+                <div class="link">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="book.js"></script>
+</html>
