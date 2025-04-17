@@ -2,52 +2,111 @@
     padding: 0;
     margin: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
 
-@media (max-width: 768px) {
-  .flex, .ask, .give, .information {
+  @media (max-width: 600px) {
+  .flex {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
   }
 
-  .height {
-    width: 90%;
-    margin-left: 0;
-  }
-
-  .genres-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .quotes_section, .friends {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  .mybook,
-  .recommend,
-  .newreleases,
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .give {
-    margin: 20px 0;
+  nav .dropdown,
+  nav .dropdown input,
+  .dropdown button {
     width: 100%;
+    text-align: center;
   }
 
-  .give-card {
-    width: 90%;
+  .book {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .search {
-    max-width: 100%;
-    margin: 10px auto;
+  .book a img {
+    width: 80%;
+    height: auto;
   }
+
+  .para1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .para2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .company {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .link {
+    justify-content: center;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .book {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .book a img {
+    width: 120px;
+    height: auto;
+  }
+
+  .para1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .para2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .company {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .link {
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  .book a img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .flex {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .para1 {
+    font-size: 2.5rem;
+  }
+
+  .para2 {
+    font-size: 1.2rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*button*/
